@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+</head>
+<body>
+  
+  <form style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;" onsubmit=welcomeUser()>
+    Name: <input onclick=changeColor1() type="text" id="name" required>
+    Section: <input onclick=changeColor2() type="text" id="section" required>
+    Course: <input onclick=changeColor3() type="text" id="course" required>
+    <button style="position: relative;left: 3.5%; margin-top: 12px; width: 67px;"id="text1">Go</button></form>
+  <script type="text/javascript">
+    function welcomeUser()
+    {
+    var student = new Object();
+    student.name = document.getElementById('name').value;
+    alert("Welcome " + student.name);
+  }
+  function changeColor1(){
+     document.getElementById("name").style.borderColor = "blue"; 
+     document.getElementById("name").style.color = "blue"; 
+  }
+  function changeColor2(){
+     document.getElementById("section").style.borderColor = "blue"; 
+     document.getElementById("section").style.color = "red"; 
+  }
+  function changeColor3(){
+     document.getElementById("course").style.borderColor = "blue"; 
+     document.getElementById("course").style.color = "green"; 
+  }
+</script>
+  </body>
+</html>
